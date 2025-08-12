@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gig Worker Finance Advisor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <button class="clear-chat" aria-label="Clear chat">🗑️</button>
+            <h1>Gig Worker Finance Advisor</h1>
+            <p>Your AI assistant for freelance and gig economy financial advice</p>
+            <button class="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
+        </header>
+        
+        <div class="chat-container">
+            <div class="status-bar" id="status-bar">Online</div>
+            <div class="messages" id="messages" role="log" aria-live="polite"></div>
+            <div class="typing" id="typing" role="status">Bot is typing...</div>
+            
+            <div class="input-area">
+                <div class="suggestions" id="suggestions"></div>
+                <textarea 
+                    id="user-input" 
+                    placeholder="Ask a finance question..." 
+                    aria-label="Enter your finance question"
+                    maxlength="500"
+                ></textarea>
+                <button id="send-btn" aria-label="Send message">Send</button>
+            </div>
+            
+            <div class="examples" role="region" aria-label="Example questions">
+                <h3>Example Questions:</h3>
+                <div class="example-question" tabindex="0">How do I track mileage expenses?</div>
+                <div class="example-question" tabindex="0">What tax deductions can I claim as a freelancer?</div>
+                <div class="example-question" tabindex="0">How should I save for retirement as a gig worker?</div>
+                <div class="example-question" tabindex="0">Do I need to pay quarterly taxes?</div>
+                <div class="example-question" tabindex="0">What's the best way to handle inconsistent income?</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <footer style="position: fixed; bottom: 0; width: 100%; text-align: center; background-color: #f9f9f9; padding: 10px; font-family: Arial, sans-serif; font-size: 14px; color: #666;">
+        Created by:- Nikhil Srivastav
+    </footer>
+</body>
+</html>
